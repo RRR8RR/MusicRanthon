@@ -48,7 +48,7 @@ async def hshs(client: Client, message: Message):
     chat_name = message.chat.title#
     username = f"@{message.reply_to_message.from_user.username}"#
     async for photo in client.iter_profile_photos(message.reply_to_message.from_user.id, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""**[𝙎𝙊𝙐𝙍𝘾𝙀 𝙏𝙀𝙋𝙏𝙃𝙊𝙉](https://t.me/Tepthon)\n\n ɴᴀᴍᴇ : {name}\n ᴜѕᴇ : {username}\nɪᴅ : `{user_id}`\nɪᴅ ᴄʜᴀᴛ : `{chat_idd}`\nᴄʜᴀᴛ : {chat_name}\nɢʀᴏᴜᴘ : {chat_username} \n**""", 
+                    await message.reply_photo(photo.file_id,       caption=f"""**[𝙎𝙊𝙐𝙍𝘾𝙀 𝙏𝙀𝙋𝙏𝙃𝙊𝙉](https://t.me/xLxLxLrr3)\n\n ɴᴀᴍᴇ : {name}\n ᴜѕᴇ : {username}\nɪᴅ : `{user_id}`\nɪᴅ ᴄʜᴀᴛ : `{chat_idd}`\nᴄʜᴀᴛ : {chat_name}\nɢʀᴏᴜᴘ : {chat_username} \n**""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
