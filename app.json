@@ -1,0 +1,78 @@
+{
+    "name": "ميوزك رنثون",
+    "description": "أهـلًا بـك عــزيـزي من هـنا يمكنـك تــنـصـيب بوت ميوزك رنثون في المحـادثـات الـصـوتـيـة",
+    "logo": "https://telegra.ph/file/02c2fdc88274c0fd5a0cb.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "AnonX",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "قـم باسـتـخراج الأيبي أيدي من هنا https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "قـم بـاسـتخراج أيبي هاش من هنا https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "يـجـب عليك اسـتـخراج توكـن البوت من @Botfather",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "لا تعبث بالرابط https://cloud.mongodb.com.",
+        "value": "mongodb+srv://SEMO1:SEMO1@cluster0.rusaedi.mongodb.net/?retryWrites=true&w=majority",
+        "required": true
+      },
+      "MUSIC_BOT_NAME": {
+        "description": "استبدل اسم بوت رنثون باسم بوتك",
+        "value": "رنثون",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "الأيدي الخاص بك .",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "جـلسـة البايروجـرام استخرجها من هنا @RUMTHONBOT",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "الأيبي كي الخاص بك",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "اسم التطبيق الذي وضعته فوق",
+        "value": "",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "ضع ايدي مجموعة التخزين وعليك رفع حساب المساعد والبوت مشرفا باكمل الصلاحيات بدون وضع التخفي ولا تلعب بالرقم  -100 فقط ضع الايدي بجانبه",
+        "value": "-100",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
