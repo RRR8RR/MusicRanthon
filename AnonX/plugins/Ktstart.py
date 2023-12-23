@@ -1,15 +1,25 @@
 import os
 import random
 import requests
+import asyncio
 from datetime import datetime
 from sys import version_info
 from time import time
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from SedthonMusic import app
-from SedthonMusic.utils.decorators.admins import AdminActual
+from Anonx import app
+from Anonx.utils.decorators.admins import AdminActual
 from strings import get_command
 from strings.filters import command
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1277,3 +1287,79 @@ def searchMusic(c: Client, m: Message):
         ]
         word = random.choice(txt)
         m.reply_text(f"- {m.from_user.mention}\n{word}")
+
+
+
+
+
+
+
+
+
+
+
+
+txt = [
+
+
+            "هل تعرضت لغدر في حياتك؟",
+            
+            
+            "هل تعرف عيوبك؟",
+
+
+            "هل أنت مُسامح أم لا تستطيع أن تُسامح؟",
+
+
+            "إذا قمت بالسفر إلى نُزهة خارج بلدك فمن هو الشخص الذي تُحب أن يُرافقك؟هل تتدخل إذا وجدت شخص يتعرض لحادثة سير أم تتركه وترحل؟",
+
+
+            "ما هو الشخص الذي لا تستطيع أن ترفض له أي طلب؟",
+
+
+            "إذا أعجبت بشخصٍ ما، كيف تُظهر له هذا الإعجاب أو ما هي الطريقة التي ستتبعها لتظهر إعجابك به؟",
+
+
+            "هل ترى نفسك مُتناقضً؟",
+
+
+            "ما هو الموقف الذي تعرضت فيه إلى الاحراج المُبرح؟",
+
+
+            "ما هو الموقف الذي جعلك تبكي أمام مجموعة من الناس رغمًا عنك؟",
+
+
+            "إذا جاء شريك حياتك وطلب الانفصال، فماذا يكون ردك وقته؟",
+
+
+            "إذا كان والد يعمل بعملٍ فقير هل تقبل به أو تستعر منه؟",
+
+
+            "ما الذي يجعلك تُصاب بالغضب الشديد؟",
+
+
+           "هإذا وجدت الشخص الذي أحببتهُ في يومٍ ما يمسك بطفله، هل هذا سيشعرك بالألم؟",
+
+
+           "علاقتك مع اهلك",
+
+
+           "ثلاثة أشياء تحبها"
+
+
+        ]
+
+
+        
+
+
+@app.on_message(command(["صراحه","صراحة"]))
+
+async def sraha(client: Client, message: Message):
+
+      a = random.choice(txt)
+
+      await message.reply(
+
+        f"{a}")
+
